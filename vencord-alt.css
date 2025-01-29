@@ -1,0 +1,99 @@
+@import url('https://clearvision.github.io/ClearVision-v6/main.css');
+
+:root {
+  /* Import colors from vencord theme */
+  --main-color: var(--synqats-gb-accent-blue-dark);
+  --hover-color: var(--synqats-gb-accent-aqua-dark);
+  --success-color: var(--synqats-gb-accent-green-dark);
+  --danger-color: var(--synqats-gb-accent-red-dark);
+  --url-color: var(--synqats-gb-accent-blue-dark);
+  
+  /* Background settings */
+  --background-image: url('https://steamuserimages-a.akamaihd.net/ugc/2119566078918184380/89326C4489001142C3FF3024E2BCC3C4B3F23B11/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true');
+  --background-shading: 0%;
+  --background-position: center;
+  --background-size: cover;
+  --background-repeat: no-repeat;
+  --background-attachment: fixed;
+  --background-brightness: 100%;
+  --background-contrast: 100%;
+  --background-saturation: 100%;
+  --background-grayscale: 0%;
+  --background-invert: 0%;
+  --background-blur: 0px;
+  --background-overlay: rgba(0, 0, 0, 0.418);
+
+  /* User popout settings */
+  --user-popout-image: var(--background-image);
+  --user-popout-position: center;
+  --user-popout-size: cover;
+  --user-popout-repeat: no-repeat;
+  --user-popout-attachment: fixed;
+  --user-popout-brightness: 100%;
+  --user-popout-contrast: 100%;
+  --user-popout-saturation: 100%;
+  --user-popout-grayscale: 0%;
+  --user-popout-invert: 0%;
+  --user-popout-blur: 3px;
+
+  /* User modal settings */
+  --user-modal-image: var(--background-image);
+  --user-modal-position: center;
+  --user-modal-size: cover;
+  --user-modal-repeat: no-repeat;
+  --user-modal-attachment: fixed;
+  --user-modal-brightness: 100%;
+  --user-modal-contrast: 100%;
+  --user-modal-saturation: 100%;
+  --user-modal-grayscale: 0%;
+  --user-modal-invert: 0%;
+  --user-modal-blur: 3px;
+
+  /* Other settings */
+  --channel-unread: var(--main-color);
+  --channel-color: var(--synqats-gb-fg-0-dark);
+  --muted-color: var(--synqats-gb-grey-0-dark);
+  --online-color: var(--synqats-gb-accent-green-dark);
+  --idle-color: var(--synqats-gb-accent-yellow-dark);
+  --dnd-color: var(--synqats-gb-accent-red-dark);
+  --streaming-color: var(--synqats-gb-accent-purple-dark);
+  --offline-color: var(--synqats-gb-grey-1-dark);
+  --main-font: 'Playfair', Playfair-display;
+  --code-font: 'Playfair', Playfair-display;
+  --channels-width: 220px;
+  --members-width: 230px;
+  --text-color: var(--synqats-gb-fg-0-dark);
+}
+
+/* Additional styling */
+.chat, .messages {
+  background: rgba(0, 0, 0, 0.5) !important;
+  backdrop-filter: blur(5px);
+}
+
+.channel-name, .guild-name {
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Import vencord color variables */
+:root {
+  --synqats-gb-bg-0-dark: #1e2021;
+  --synqats-gb-bg-1-dark: #282828;
+  --synqats-gb-bg-2-dark: #282828;
+  --synqats-gb-bg-3-dark: #3c3836;
+  --synqats-gb-bg-4-dark: #3c3836;
+  --synqats-gb-bg-5-dark: #504944;
+  --synqats-gb-bg-dim-dark: #141617;
+  --synqats-gb-fg-0-dark: #d4be98;
+  --synqats-gb-fg-1-dark: #ddc7a0;
+  --synqats-gb-grey-0-dark: #7c6f64;
+  --synqats-gb-grey-1-dark: #918274;
+  --synqats-gb-grey-2-dark: #a79a83;
+  --synqats-gb-accent-red-dark: #ea6962;
+  --synqats-gb-accent-orange-dark: #e78a4f;
+  --synqats-gb-accent-yellow-dark: #d8a656;
+  --synqats-gb-accent-green-dark: #a8b665;
+  --synqats-gb-accent-aqua-dark: #89B48C;
+  --synqats-gb-accent-blue-dark: #7caea3;
+  --synqats-gb-accent-purple-dark: #d3859b;
+}

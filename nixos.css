@@ -1,0 +1,112 @@
+@import url("https://clearvision.github.io/ClearVision-v6/main.css");
+
+:root {
+    --main-color: #007fba;
+    --hover-color: #007fba;
+    --success-color: #007fba;
+    --danger-color: #007fba;
+    --url-color: #00bbff;
+    --background-image: url("https://hyprland.org/imgs/blog/contestWinners/Kath.png");
+    --background-shading: 0%;
+    --background-position: center;
+    --background-size: cover;
+    --background-repeat: no-repeat;
+    --background-attachment: fixed;
+    --background-brightness: 100%;
+    --background-contrast: 100%;
+    --background-saturation: 100%;
+    --background-grayscale: 0%;
+    --background-invert: 0%;
+    --background-blur: 0px;
+    --background-overlay: rgba(0, 0, 0, 0.418);
+    --user-popout-position: center;
+    --user-popout-size: cover;
+    --user-popout-repeat: no-repeat;
+    --user-popout-attachment: fixed;
+    --user-popout-brightness: 100%;
+    --user-popout-contrast: 100%;
+    --user-popout-saturation: 100%;
+    --user-popout-grayscale: 0%;
+    --user-popout-invert: 0%;
+    --user-popout-blur: 3px;
+    --user-modal-image: url("https://cdn.discordapp.com/attachments/785043747062284308/1292354159953051699/IMG_0447.jpg?ex=67036e1a&is=67021c9a&hm=e57455e01980c505f651a3d8fd2f1da6bfccc0c913c2cb4d1383f9158cee2228&");
+    --user-modal-position: center;
+    --user-modal-size: cover;
+    --user-modal-repeat: no-repeat;
+    --user-modal-attachment: fixed;
+    --user-modal-brightness: 100%;
+    --user-modal-contrast: 100%;
+    --user-modal-saturation: 100%;
+    --user-modal-grayscale: 0%;
+    --user-modal-invert: 0%;
+    --user-modal-blur: 3px;
+    --home-icon: url("36237a6092443acf2904e1b480c521c7.jpg");
+    --home-position: right;
+    --home-size: 40px;
+    --channel-unread: var(--main-color);
+    --channel-color: rgb(255, 255, 255);
+    --muted-color: rgba(255, 255, 255, 0.1);
+    --online-color: #43b581;
+    --idle-color: #faa61a;
+    --dnd-color: #982929;
+    --streaming-color: #593695;
+    --offline-color: #808080;
+    --main-font: "Playfair", Playfair-display;
+    --code-font: "Playfair", Playfair-display;
+    --channels-width: 220px;
+    --members-width: 230px;
+    --backdrop-overlay: rgba(0, 0, 0, 0.8);
+    --backdrop-image: var(--background-image);
+    --backdrop-position: var(--background-position);
+    --backdrop-size: var(--background-size);
+    --backdrop-repeat: var(--background-repeat);
+    --backdrop-attachment: var(--background-attachment);
+    --backdrop-brightness: var(--background-brightness);
+    --backdrop-contrast: var(--background-contrast);
+    --backdrop-saturation: var(--background-saturation);
+    --backdrop-invert: var(--background-invert);
+    --backdrop-grayscale: var(--background-grayscale);
+    --backdrop-sepia: var(--background-sepia);
+    --backdrop-blur: var(--background-blur);
+    --bd-blue: var(--main-color);
+    --bd-blue-hover: var(--hover-color);
+    --bd-blue-active: var(--hover-color);
+    --text-color: #891cea;
+}
+
+body,
+.scroller::-webkit-scrollbar,
+.message-group,
+.channel-name,
+.channel-name-ellipsis,
+.guilds-wrapper,
+.guild-name,
+.guild-content,
+.member-username,
+.message-text {
+    color: var(--text-color) !important;
+}
+
+.chat,
+.messages {
+    background: rgba(0, 0, 0, 0.5) !important;
+    backdrop-filter: blur(5px);
+}
+
+.message-text {
+    color: var(--text-color) !important;
+}
+
+html,
+body {
+    background-image: var(--background-image);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--text-color);
+}
+
+.channel-name,
+.guild-name {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}

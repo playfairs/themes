@@ -1,0 +1,110 @@
+/**
+ * @name CV:NixOS
+ * @description A Dark, Rounded Hyprland based Theme.
+ * @author playfairs
+ * @version 1.6.2
+ * @invite heresy
+ * @website https://github.com/playfairs/themes
+ * @source
+ * @authorId 785042666475225109
+*/
+
+/**
+ * This Theme uses some features from ClearVision
+ * and Midnight Discord
+ * 
+ * For Midnight Discord
+ * https://github.com/refact0r/midnight-discord
+ * 
+ * For ClearVision
+ * https://github.com/clearvision/ClearVision-v6
+ *
+
+/* IMPORTANT: make sure to enable dark mode in discord settings for the theme to apply properly!!! */
+
+@import url("https://refact0r.github.io/midnight-discord/midnight.css");
+@import url("https://clearvision.github.io/ClearVision-v6/main.css");
+
+:root {
+    --font: "Playfair";
+
+    --background-image: url("https://playfairs.cc/nixchan.jpg");
+
+    /* This changes the top left corner text */
+    --corner-text: "Heresy";
+
+    /* color of status indicators and window controls */
+    --online-indicator: var(
+        --accent-6
+    );
+    --dnd-indicator: hsl(0, 85%, 34%);
+    --idle-indicator: hsl(
+        50,
+        60%,
+        60%
+    );
+    --streaming-indicator: hsl(
+        260,
+        60%,
+        60%
+    );
+
+    /* accent colors */
+    --accent-1: hsl(190, 70%, 60%); /* links */
+    --accent-2: hsl(190, 70%, 48%); /* general unread/mention elements */
+    --accent-3: hsl(190, 70%, 42%); /* accent buttons */
+    --accent-4: hsl(190, 70%, 36%); /* accent buttons when hovered */
+    --accent-5: hsl(190, 70%, 30%); /* accent buttons when clicked */
+    --accent-6: hsl(148, 100%, 41%); /* accent buttons when clicked */
+    --mention: hsla(190, 80%, 52%, 0.1); /* mentions & mention messages */
+    --mention-hover: hsla(
+        190,
+        80%,
+        52%,
+        0.05
+    );
+
+    /* text colors */
+    --text-0: white; /* text on colored elements */
+    --text-1: var(--text-2); /* other normally white text */
+    --text-2: hsl(220, 25%, 70%); /* headings and important text */
+    --text-3: hsl(220, 15%, 60%); /* normal text */
+    --text-4: hsl(220, 15%, 40%); /* icon buttons and channels */
+    --text-5: hsl(220, 15%, 25%); /* muted channels/chats and timestamps */
+
+    /* background and dark colors */
+    --bg-1: hsl(220, 15%, 20%); /* dark buttons when clicked */
+    --bg-2: hsl(220, 15%, 16%); /* dark buttons */
+    --bg-3: hsl(220, 15%, 13%); /* spacing, secondary elements */
+    --bg-4: hsla(222, 23%, 14%, 0.402); /* main background color */
+    --hover: hsla(230, 20%, 40%, 0.1); /* channels and buttons when hovered */
+    --active: hsla(221, 20%, 40%, 0.329); /* channels and buttons when clicked or selected */
+    --message-hover: hsla(0, 0%, 0%, 0.261); /* messages when hovered */
+
+    /* amount of spacing and padding */
+    --spacing: 1.1pc;
+
+    /* animations */
+    --list-item-transition: 0.2s ease; /* channels/members/settings hover transition */
+    --unread-bar-transition: 0.2s ease; /* unread bar moving into view transition */
+    --icon-spin-transition: 1s ease; /* round icon button spin (settings, emoji, etc.) */
+
+    /* corner roundness (border-radius) */
+    --roundness-xl: 20px; /* roundness of big panel outer corners */
+    --roundness-l: 30px; /* popout panels */
+    --roundness-m: 16px; /* smaller panels, images, embeds */
+    --roundness-s: 12px; /* members, settings inputs */
+    --roundness-xs: 10px; /* channels, buttons */
+    --roundness-xxs: 9px; /* searchbar, small elements */
+
+    /* filter uncolorable elements to fit theme */
+    /* (just set to none, they're too much work to configure) */
+    --login-bg-filter: saturate(0.3) hue-rotate(-15deg) brightness(0.4); /* login background artwork */
+    --green-to-accent-3-filter: hue-rotate(56deg) saturate(1.43); /* add friend page explore icon */
+    --blurple-to-accent-3-filter: hue-rotate(304deg) saturate(0.84)
+        brightness(1.2); /* add friend page school icon */
+
+    /* nav buttons */
+    --windows-nav: none;
+    --custom-nav: block;
+}
